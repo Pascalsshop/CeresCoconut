@@ -1,0 +1,70 @@
+{#Insert markup for navigation list here#}
+{# import "Ceres::Category.Macros.CategoryTree" as Tree #}
+
+<ul class="mainmenu p-0 m-0 d-flex">
+    <li><a href="{{ trans("CeresCoconut::Template.homelink") }}">{{ trans("CeresCoconut::Template.headerhome") }}</a></li>
+    
+    <li class="ddown"><a href="#">{{ trans("CeresCoconut::Template.headercategory") }}</a>
+	<ul data-level="1" id="navDropdown0" class="collapse">
+	<li>
+	<ul class="nav-dropdown-inner">
+	<li class="level1"><a href="/analytische-geraete">Analytische Geräte</a></li>
+	</ul>
+	</li> 
+	<li>
+	<ul class="nav-dropdown-inner">
+	<li class="level1"><a href="/ultraschalltechnik">Ultraschalltechnik</a></li>
+	</ul>
+	</li>
+	<li>
+	<ul class="nav-dropdown-inner">
+	<li class="level1"><a href="/messarmaturen">Messarmaturen</a></li>
+	</ul>
+	</li>
+	<li>
+	<ul class="nav-dropdown-inner">
+	<li class="level1"><a href="/labor-messgeraete-zubehoer">Labor-Messgeräte & Zubehör</a></li>
+	</ul>
+	</li>
+	<li>
+	<ul class="nav-dropdown-inner">
+	<li class="level1"><a href="/spektroskopie">Spektroskopie</a></li>
+	</ul>
+	</li>
+	<li>
+	<ul class="nav-dropdown-inner">
+	<li class="level1"><a href="/chromatographie">Chromatographie</a></li>
+	</ul>
+	</li>
+	<li>
+	<ul class="nav-dropdown-inner">
+	<li class="level1"><a href="/labortechnik">Labortechnik</a></li>
+	</ul>
+	</li>
+	<li>
+	<ul class="nav-dropdown-inner">
+	<li class="level1"><a href="/laboreinrichtung">Laboreinrichtung</a></li>
+	</ul>
+	</li>
+	</li>
+	</ul>
+    </li>
+    <li><a href="{{ trans("CeresCoconut::Template.shiplink") }}">{{ trans("CeresCoconut::Template.headershipping") }}</a></li>
+    <li><a href="{{ trans("CeresCoconut::Template.datalink") }}">{{ trans("CeresCoconut::Template.headerdatapolicy") }}</a></li>
+    <li><a href="{{ trans("CeresCoconut::Template.contactlink") }}">{{ trans("CeresCoconut::Template.headercontact") }}</a></li>
+    <li><a href="{{ trans("CeresCoconut::Template.purchaselink") }}">{{ trans("CeresCoconut::Template.headerpurchaseform") }}</a></li>
+</ul>
+
+
+{#<ul class="mainmenu">
+    {{ Tree.get_nav_bar(
+        categories,
+        "",
+        ceresConfig.header.megamenuLevels,
+        {
+            "1": ceresConfig.header.megamenuItemsStage1,
+            "2": ceresConfig.header.megamenuItemsStage2,
+            "3": ceresConfig.header.megamenuItemsStage3
+        }
+    ) }}
+</ul>#}
